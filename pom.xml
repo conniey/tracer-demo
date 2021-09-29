@@ -11,9 +11,10 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>demo-parent-pom</artifactId>
-	<version>1.0.0</version>
-	<name>Demo (Parent)</name>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
+
+	<name>parent-pom</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -47,7 +48,12 @@
 		<dependency>
 			<groupId>com.azure</groupId>
 			<artifactId>azure-core</artifactId>
-			<version>1.20.0</version>
+			<version>1.19.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.azure</groupId>
+			<artifactId>azure-core-tracing-opentelemetry</artifactId>
+			<version>1.0.0-beta.11</version>
 		</dependency>
 
 		<dependency>
@@ -67,15 +73,6 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 
 	<modules>
 		<module>spring-azure-tracer</module>

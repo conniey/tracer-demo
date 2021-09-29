@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.example</groupId>
+		<groupId>com.example</groupId>
 		<artifactId>demo-parent-pom</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
@@ -14,17 +14,5 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Spring Azure Tracer</name>
 	<description>Spring Azure Tracer</description>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-sleuth</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>com.azure</groupId>
-			<artifactId>azure-core</artifactId>
-		</dependency>
-
-	</dependencies>
+	<packaging>jar</packaging>
 </project>
